@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Student Communication App Account</h1>
+  
+  <fieldset style="width: 500px;">
+    <legend>
+      <h2>Create an account</h2>
+    </legend>
+    
+    <form action="form.php" method="post" enctype="multipart/form-data">
+      <table>
+        <tr>
+          <td>
+           <label for="name">First Names:</label>
+          </td>
+        <td>
+          <input type="text" placeholder="First Name" name="firstname" required>
+        </td>
+      </tr>
+        <tr>
+          <td>
+           <label for="name"> Second Names:</label>
+          </td>
+          <td>
+            <input type="text" placeholder="Second Name" name="secondname" required>
+          </td>
+        </tr>
+        <tr>
+         <td>
+         <label for="email"> Email:</label>
+         </td>
+         <td>
+          <input type="mail" placeholder="Email" name="email" required>
+         </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="phonenumber">Phone Number:</label>
+  
+          </td>
+          <td>
+            <select name="phoneinfo" >
+              <option >+250</option>
+              <option >+255</option>
+              <option >+260</option>
+          </select>
+          <input style="width: 110px;" type="text" placeholder="Phone Number" name="tel" required>
+          </td>
+          
+        </tr>
+        <tr>
+          <td>
+            <label for="password">Create password:</label>
+          </td>
+          <td>
+            <input type="password" placeholder="Password" name="password1" required>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="password">Confirm password:</label>
+          </td>
+          <td>
+            <input type="password" placeholder="Confirm password" name="password2" required>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="gender">Gender:</label>
+          </td>
+          <td>
+            <input type="radio" name="gender" value="Male"><label>Male</label>
+            <input type="radio" name="gender" value="Female"><label>Female</label>
+          </td>
+        </tr>
+        <tr>
+           <td>
+            <label for="class">Enter Your Class:</label>
+           </td>
+           <td>
+            <select name="class">
+              <option>Year 1 A</option>
+              <option >Year 1 B</option>
+              <option >Year 1 C</option>
+              <option >Year 2 A</option>
+              <option >Year 2 B</option>
+              <option >Year 2 C</option>
+              <option >Year 2 D</option>
+            </select>
+           </td>
+  
+        </tr>
+        <tr>
+          <td>
+            <label>Select preferred time to take online courses(weekends)</label>
+          </td>
+          <td>
+            <input type="time" name="time" >
+          </td>
+        </tr>
+        <tr>
+          <td>Select default background theme color for your account interface</td>
+          <td>
+            <input type="color" name="color">
+          </td>
+        </tr>
+        <tr>
+          <td><label >Club(s) you belong in:</label></td>
+          <td>
+            <p><input  type="checkbox" name="club" value="Arts and Design"><label>Arts and Design</label></p>
+            <p><input type="checkbox" name="club" value="Code Tech"><label>Code Tech</label></p> 
+              <p><input type="checkbox" name="club"  value="CyberKnight"><label>CyberKnight</label></p>
+              <p> <input type="checkbox" name="club" value="Public Speaking"><label>Public Speaking</label></p>
+          </td>
+        
+        <tr>
+           <td>
+            <label for="DB">Date of birth:</label>
+           </td>
+           <td>
+            <input type="date" name="DB" required>
+           </td>
+        </tr>
+        <tr>
+           <td>Residence Province:</td>
+           <td>
+            <input type="text" placeholder="Province" name="province" required>
+           
+           </td>
+        </tr>
+        <tr>
+          <td>
+            Student Card Photo
+          </td>
+          <td>
+            <input type="file" name="stcard" required>
+          </td>
+        </tr>
+        <tr>
+          <td>Insurance Card Photo</td>
+          <td>
+            <input type="file" name="iscard" required>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Do you have any health issues:
+          </td>
+          <td>
+            <input type="checkbox" name="checkboxh" value="Yes, I do"><label>Yes, I do</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            If yes describe it and how to take care of it:
+
+          </td>
+          <td>
+        <textarea name="healthinfo">
+
+        </textarea>
+          </td>
+        </tr>
+          <tr>
+            <td>
+            <label > Rate how you see our service</label>
+            </td>
+            <td>
+              <input type="range" name="range">
+            </td>
+        </tr>
+        <tr>
+          <td>Is there anything to improve,if yes tell us:</td>
+          <td>
+            <textarea name="rating">
+
+            </textarea>
+          </td>
+        </tr>
+
+        
+      </table>
+      <button type="submit">Register</button>
+    </form>
+  </fieldset>
+
+  
+  
+</body>
+</html>
